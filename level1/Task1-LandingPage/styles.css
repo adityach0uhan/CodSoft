@@ -1,0 +1,153 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #28a745;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #28a745;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ddd;
+}
+
+.services, .pricing, .about, .contact {
+    padding: 60px 0;
+}
+
+.services h2, .pricing h2, .about h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.service-cards, .pricing-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 10px 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form .btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form .btn:hover {
+    background-color: #218838;
+}
+
+.footer {
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
