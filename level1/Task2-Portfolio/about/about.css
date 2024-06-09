@@ -1,0 +1,126 @@
+.about-heading {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-weight: 900;
+}
+
+#about {
+    box-sizing: border-box;
+    border: 1px solid rgb(29, 28, 27);
+    border-radius: 12px;
+    height: 250px;
+    margin: 20px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-left,.transform {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.9rem;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+
+}
+.about-left{
+    border-right: 1px solid rgb(29, 28, 27);
+
+}
+.transform{
+    width: 90%;
+    height: 90%;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 0 var(--orange);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.transform i {
+    font-size: 2.2rem;
+    padding-left: 9px;
+}
+
+.about-right {
+    height: 100%;
+    display: flex;
+}
+
+.about-right .frontend {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+    /* align-items: start; */
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    box-shadow: inset 0 0 0 0 var(--orange1);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+#about i {
+    padding-left: 2px;
+
+}
+.transform:hover{
+    border: 1px solid black;
+    /* background-color: var(--orange); */
+    box-shadow: inset 800px 0 0 0 var(--orange);
+    transform:scale(1.07);
+    color: var(--darkblue);
+    .fa{
+        color: white;
+    }
+}
+
+
+.frontend:hover {
+    background-color: var(--orange);
+    transform: scale(1.05);
+    box-shadow: inset 800px 0 0 0 var(--orange);
+     h3,.fao1{
+    color: var(--darkblue);
+    }
+    .fao{
+        color: white;
+    }
+    
+}
+.f19rem{
+     font-size: 1.9rem;
+}
+
+@media only screen and (max-width: 750px) {
+
+    #about {
+        border: 1px solid black;
+        padding: 4px;
+        margin: 0;
+        height: 600px;
+        grid-template-columns: 1fr;
+    }
+
+
+.about-left{
+    border: none;
+    padding:7px ;
+}
+.about-right .frontend{
+    margin:auto;
+}
+}

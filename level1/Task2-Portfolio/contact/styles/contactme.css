@@ -1,0 +1,79 @@
+#contact {
+    width: 100vw;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-main {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contact-me-child {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 9px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: var(--darkblue);
+    color: var(--orange);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: inset 0 0 0 0 var(--orange1);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.contact-me-child i {
+    display: block;
+    font-size: 3rem;
+}
+
+.contact-me-child div,
+a {
+    padding-top: 8px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.contact-me-child:hover {
+    /* background-color: #3a5666; */
+    box-shadow: inset 0 300px 0 0 var(--orange);
+    transform: scale(1.1);
+    color: var(--darkblue);
+    a{
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+
+    #contact {
+        height: 1060px;
+    }
+
+    .contact-main {
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-me-child{
+        margin: auto;
+    }
+
+}
